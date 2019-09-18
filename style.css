@@ -1,0 +1,89 @@
+html {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    height: 100%;
+    width: 100%;
+    color: white;
+}
+
+body {
+    display: grid;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    align-content: start;
+    justify-content: center;
+    background-color: rgb(25,25,25);
+}
+
+#container {
+    display: grid;
+    height: 100%;
+    width: 100%;
+    background-color: rgb(25,25,25);
+    grid-template-rows: 200px / 450px;
+    grid-template-columns: 1fr;
+}
+
+#gameBoard {
+    background-color: rgb( 50, 50, 50);
+    border: 0px solid black;
+    border-radius: 20px;
+    height: 400px;
+    width: 400px;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    grid-template-rows: repeat(3, 80px);
+    grid-template-columns: repeat(3, 80px);
+    grid-row: 2 / 3;
+}
+
+#gameInfo {
+    display: grid;
+    grid-row: 1 / 2;
+    grid-template-rows: 3fr;
+}
+
+#title {
+    height: 80px;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    justify-items: center;
+    align-items: center;
+}
+
+#titleContainer span {
+    font-size: 35px;
+}
+
+#buttons {
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    height: 60px;
+}
+
+.tile {
+    font-size: 30px;
+    display: grid;
+    border: 2px solid white;
+    justify-items: center;
+    align-items: center;
+}
+
+.xTile {
+    color: rgb(0, 200, 200);
+}
+
+.oTile {
+    color: rgb(240, 158, 64);
+}
+
+.blue {
+    color: rgb(0, 200, 200);
+}
+
+.orange {
+    color: rgb(240, 158, 64);
+}

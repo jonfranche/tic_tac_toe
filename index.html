@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Tic-Tac-Toe</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div id="container">
+            <div id="gameBoard">
+            </div>
+            <div id="gameInfo">
+                <div id="title">
+                    <div id="titleContainer">
+                        <span>Tic</span><span>-</span><span class="blue">Tac</span><span>-</span><span class="orange">Toe</span>
+                    </div>
+                </div>
+                <div id="players">
+                    <div>
+                        <span>Player: </span>
+                        <span class="blue">X</span>
+                    </div>
+                    <div>
+                        <span>Player: </span>
+                        <span class="orange">O</span>
+                    </div>
+                </div>
+                <div id="buttons">
+                    <button id="startButton" onclick="game.start()">Start Game</button>
+                    <button id="resetButton" onclick="resetGame()">Reset Game</button>
+                </div>
+            </div>
+            <div id="gameLog">
+                    <span id="log">Press Start Button to begin!</span>
+            </div>
+        </div>
+    </body>
+    <script src="script.js"></script>
+</html>
